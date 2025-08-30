@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import styles from "./card.module.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {IconDefinition} from "@fortawesome/free-solid-svg-icons";
