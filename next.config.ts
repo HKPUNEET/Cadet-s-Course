@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    /* Keep other config options here */
+
+    images: {
+        domains: ['cadet-s-course.vercel.app'],
+    },
 
     // Disable ESLint checks during production build
     eslint: {
