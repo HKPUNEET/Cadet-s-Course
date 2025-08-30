@@ -4,17 +4,9 @@ import Contact from "@/components/contact";
 import Hero from "@/components/hero";
 import Description from "@/components/description";
 import Course from "@/components/course";
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-    title: 'SSB Preparation Course with Refundable Fee - Cadet Program',
-    description: 'Join our 21-day refundable SSB preparation course. Free trial available. Expert SSB guidance from selected cadets like Ayush Kumar Singh (AIR-34 TES-51) and Varadraj Patil (AIR-42 TES-51). Build officer-like qualities (OLQs) and crack your SSB interview. Limited seats - register now!',
-    keywords: 'SSB coaching, SSB interview preparation, refundable course, free SSB training, cadet program, defence academy, SSB success, officer selection, Indian Army SSB, Navy SSB, Air Force SSB, Aayush Kumar Singh, Subham Singh',
-    openGraph: {
-        title: 'SSB Preparation Course - Refundable Program for Defence Aspirants',
-        description: '21-day online SSB course with money-back guarantee. Learn from successful cadets and crack your SSB interview. Build confidence and discipline.',
-    },
-}
+
+
 
 export default function Home() {
     return (

@@ -3,7 +3,7 @@ import { useState} from "react";
 import styles from "./head.module.css";
 import Image from "next/image";
 
-export default function Head() {
+export default function Headssb() {
     const [menuOpen, setMenuOpen] = useState(false);
     const menuItems = [
         { label: "Home", target: "section-1" },
@@ -15,7 +15,7 @@ export default function Head() {
     return (
         <header className={styles.navbar}>
             {/* Left side - Logo / Brand */}
-            <div className={styles.brand}>SSB Transform</div>
+            <div className={styles.brand}>Cadet's Course</div>
 
             {/* Center - Images */}
             <div className={styles.headimg}>
