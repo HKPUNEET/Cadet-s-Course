@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cadet-s-course.vercel.app
+
+# Sitemaps
+Sitemap: https://cadet-s-course.vercel.app/sitemap.xml
