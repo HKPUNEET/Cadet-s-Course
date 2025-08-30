@@ -56,11 +56,11 @@ export default function Home() {
                 <Hero />
             </section>
 
-            <section className="content-section">
-                <div className="content">
-                    <p></p>
-                </div>
-            </section>
+            {/*<section className="content-section">*/}
+            {/*    <div className="content">*/}
+            {/*        <p></p>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
             <section className="parallax" id="section-2">
                 <div className="wrapper">
@@ -70,7 +70,7 @@ export default function Home() {
 
             {/*<section className="content-section">*/}
             {/*    <div className="content">*/}
-            {/*        <p>some content here...</p>*/}
+
             {/*    </div>*/}
             {/*</section>*/}
 
@@ -80,32 +80,32 @@ export default function Home() {
                 {/*</div>*/}
             </section>
 
-            <section className="content-section">
-                <div className="content">
-                    <p></p>
-                </div>
-            </section>
+            {/*<section className="content-section">*/}
+            {/*    <div className="content">*/}
+            {/*        <p></p>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
             <section className="parallax" id="section-4">
                 <div className="wrapper" id="wrapper1">
                     <Course/>
                 </div>
             </section>
-            <section className="content-section">
-                <div className="content">
-                    <p></p>
-                </div>
-            </section>
+            {/*<section className="content-section">*/}
+            {/*    <div className="content">*/}
+            {/*        <p></p>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
             <section className="parallax" id="section-5">
                 <div className="wrapper" id="wrapper1">
                     <Contact />
                 </div>
             </section>
 
-            <section className="content-section">
-                <div className="content">
-                    <p></p>
-                </div>
-            </section>
+            {/*<section className="content-section">*/}
+            {/*    <div className="content">*/}
+            {/*        <p></p>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
 
         </>
