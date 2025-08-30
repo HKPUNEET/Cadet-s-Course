@@ -18,7 +18,7 @@ export default function Description(){
                 <h3 className={styles.head3}>AIR-34 TES-51</h3>
             </div>
                 <div className={styles.img1}>
-                    <Image src={"/images/Subham.jpg"} alt={"AYUSH"} width={200} height ={200} className={styles.img}/>
+                    <Image src={"/images/subham.jpg"} alt={"AYUSH"} width={200} height ={200} className={styles.img}/>
                     <h3 className={styles.head3}>VARADRAJ PATIL</h3>
                     <h3 className={styles.head3}>AIR-42 TES-51</h3></div>
             </div>
