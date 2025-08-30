@@ -52,7 +52,7 @@ export default function Footer() {
             </div>
 
             <div className={styles.bottom}>
-                © 2023 SSB EXCELLENCE
+                © 2025 CADET'S COURSE
             </div>
         </footer>
     );

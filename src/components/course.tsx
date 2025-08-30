@@ -7,7 +7,7 @@ export default function Course() {
         <div className={styles.container} id="section-fees">
             <h2 className={styles.title}>Course Fees & Special Offer:</h2>
             <ul className={styles.list}>
-                <li>₹499 <span>(1st Day Registration – 27th August)</span></li>
+                <li>₹499 <span>(1st Day Registration – 17th September)</span></li>
                 <li>₹599 <span>(Other Days)</span></li>
             </ul>
 
