@@ -1,23 +1,123 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  font-size: clamp(12px, 1vw, 20px);
+  overflow-x: hidden;
 }
 
-.parallax-container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.parallax-image {
-  position: absolute;
-  top: 0;
-  left: 0;
+section {
   width: 100%;
-  height: 120%; /* a bit taller so you have room to move it */
-  object-fit: cover;
-  z-index: -1;
+  min-height: 20vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+p {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+
+.parallax {
+  position: relative;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed; /* Desktop parallax */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.parallax > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Backgrounds */
+#section-1 {
+  background-image: url("/images/ima2.jpg");
+  min-height: 100vh; /* Changed from 80vw */
+}
+
+#section-2 {
+  background-image: url("/images/ina.jpg");
+  min-height: 80vh; /* Changed from 80vw */
+}
+
+#section-3 {
+  background-image: url("/images/afa.png");
+  min-height: 100vh;
+}
+#section-4 {
+  background-image: url("/images/ima2.jpg");
+  /*min-height: 100vh; !* Changed from 80vw *!*/
+}
+.content-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #556B2F;
+
+}
+/* --- RESPONSIVENESS --- */
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+  .parallax {
+    background-attachment: scroll; /* Disable parallax on mobile/tablet */
+    min-height: 60vh;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #section-2 {
+    min-height: 70vh;
+  }
+  #section-1 {
+    min-height: 100vh;
+  }
+}
+/*#wrapper1{*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background-color: black;*/
+/*  border-radius: 16px;*/
+
+/*}*/

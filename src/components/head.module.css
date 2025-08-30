@@ -1,4 +1,4 @@
-/* The top bar container */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -12,49 +12,47 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+    box-sizing: border-box;
+    min-height:7rem;
 }
 
 
-/* Brand / title */
 .brand {
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
-    white-space: nowrap; /* prevent text from breaking */
+    white-space: nowrap;
     flex: 1;
 }
 
-/* Center logos */
+
 .headimg {
     flex: 2;
     display: flex;
     justify-content: center;
-
     align-items: center;
-    background-color: red;
-    gap: 1.5rem; /* balanced spacing */
+    gap: 1.5rem;
 }
 
 .logo {
-    width: 6.25rem;          /* fixed circle size */
+    width: 6.25rem;
     height: 6.25rem;
-    border-radius: 50%;      /* perfect circle */
-    object-fit: contain;     /* logo fits inside */
-    background-color: white; /* so transparent logos look neat */
-    padding: 0.5rem;         /* inner spacing */
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    padding: clamp(0.1rem, 0.5rem, 0.5rem);
     box-sizing: border-box;
-    display: block;          /* prevent inline cut-off */
+    display: block;
 }
 
 
-/* Right nav links */
 .headdiv {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     margin: 0;
     padding: 0;
-    background-color: red;
+    gap: 0.5rem;
 }
 
 .headdiv div {
@@ -62,12 +60,77 @@
     font-size: 1.2rem;
     color: black;
     font-weight: bold;
-    padding: 0.5rem 1rem; /* tighter padding for balance */
-    border-radius: 0.5rem; /* rounded hover effect */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
 
 .headdiv div:hover {
-    color: #fff; /* text turns white */
-    background: #556B2F; /* olive green background */
+    color: #fff;
+    background: #556B2F;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-direction: column;
+    padding: 0.5rem;
+    z-index: 999;
+}
+
+.dropdown div {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown div:hover {
+    background: #556B2F;
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+    .headimg {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .headdiv {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .dropdown.show {
+        display: flex;
+    }
 }

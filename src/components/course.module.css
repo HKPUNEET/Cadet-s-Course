@@ -1,0 +1,91 @@
+.container {
+    background: #2e4a25; /* Army green */
+    color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.list {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+}
+
+.list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.list span {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.policy, .upgrade {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.icon {
+    color: #ffd700;
+    flex-shrink: 0;
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+}
+
+.highlight {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .list li {
+        font-size: 1.4rem;
+    }
+
+    .policy, .upgrade {
+        font-size: 0.95rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icon {
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .list li {
+        font-size: 1.5rem;
+    }
+}

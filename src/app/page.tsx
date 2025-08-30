@@ -1,28 +1,70 @@
-import Image from "next/image";
 import Headssb from "@/components/headssb";
 import About from "@/components/about";
-import Enroll from "@/components/enroll";
 import Contact from "@/components/contact";
 import Hero from "@/components/hero";
+import Description from "@/components/description";
+import Course from "@/components/course";
+
 export default function Home() {
-  return (
-    <div >
-      <Headssb></Headssb>
+    return (
+        <>
+            <Headssb />
+            <section className="parallax" id="section-1">
+                <Hero />
+            </section>
+
+            <section className="content-section">
+                <div className="content">
+                    <p></p>
+                </div>
+            </section>
+
+            <section className="parallax" id="section-2">
+                <div className="wrapper">
+                    <About />
+                </div>
+            </section>
+
+            {/*<section className="content-section">*/}
+            {/*    <div className="content">*/}
+            {/*        <p>some content here...</p>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
+
+            <section className="parallax" id="section-3">
+                {/*<div className="wrapper">*/}
+                    <Description/>
+                {/*</div>*/}
+            </section>
+
+            <section className="content-section">
+                <div className="content">
+                    <p></p>
+                </div>
+            </section>
+            <section className="parallax" id="section-4">
+                <div className="wrapper" id="wrapper1">
+                    <Course/>
+                </div>
+            </section>
+            <section className="content-section">
+                <div className="content">
+                    <p></p>
+                </div>
+            </section>
+            <section className="parallax" id="section-5">
+                <div className="wrapper" id="wrapper1">
+                    <Contact />
+                </div>
+            </section>
+
+            <section className="content-section">
+                <div className="content">
+                    <p></p>
+                </div>
+            </section>
 
 
-        <Hero></Hero>
-        <div style={{ height: "200vh", background: "#111" }}>
-            <h1 style={{ color: "white" }}>Scroll me</h1>
-        </div>
-
-
-      <About></About>
-
-      <Contact></Contact>
-
-      <Enroll></Enroll>
-
-
-    </div>
-  );
+        </>
+    );
 }

@@ -1,0 +1,38 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0.9rem;
+    color:#556b2f;
+    background-color:white;
+    gap:2rem;
+
+
+}
+.card:hover{
+    background-color:#556b2f;
+    color: white;
+    transition: 0.2s ease;
+}
+.cardText{
+    padding:0.5rem;
+    text-align: center;
+}
+.image{
+
+}
+.icon{
+    width:4.5rem;
+    height:4.5rem;
+    margin-top:2rem;
+}
+.head{
+    font-size:1.5rem;
+    text-align: center;
+    font-weight: bold;
+
+
+}

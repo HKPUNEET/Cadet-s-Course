@@ -1,19 +1,20 @@
+"use client"
 import Image from "next/image";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
     return (
-        <div className={styles.heroContainer}>
-            {/*<Image*/}
-            {/*    src={"/images/ima2.jpg"}*/}
-            {/*    alt="ima"*/}
-            {/*    width={0}*/}
-            {/*    height={0}*/}
-            {/*    sizes="100vw"*/}
-            {/*    style={{ width: "100%", height: "auto", opacity: "0.3" }}*/}
-            {/*/>*/}
-
-            {/* Overlayed Text like SSB Excellence */}
+        // <div className={styles.heroContainer}>
+        //     {/*<Image*/}
+        //     {/*    src={"/images/ima2.jpg"}*/}
+        //     {/*    alt="ima"*/}
+        //     {/*    width={0}*/}
+        //     {/*    height={0}*/}
+        //     {/*    sizes="100vw"*/}
+        //     {/*    style={{ width: "100%", height: "auto", opacity: "0.3" }}*/}
+        //     {/*/>*/}
+        //
+        //     {/* Overlayed Text like SSB Excellence */}
             <div className={styles.overlayContent}>
                 <h1 className={styles.heroTitle}>
                     YOUR JOURNEY TO ANTIM PAG <br /> STARTS FROM HERE
@@ -27,10 +28,11 @@ export default function Hero() {
                 </p>
 
                 <div className={styles.heroButtons}>
-                    <button className={styles.primaryBtn}>ENROLL NOW</button>
-                    <button className={styles.secondaryBtn}>OUR PROGRAMS</button>
+                    <button className={styles.primaryBtn} onClick={() => document.getElementById("section-5")?.scrollIntoView({ behavior: "smooth" })}
+                    >ENROLL NOW</button>
+                    <button className={styles.secondaryBtn} onClick={() => document.getElementById("section-4")?.scrollIntoView({ behavior: "smooth" })}>OUR PROGRAMS</button>
                 </div>
             </div>
-        </div>
+        // </div>
     );
 }
