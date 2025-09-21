@@ -142,3 +142,11 @@
         align-items: center;
     }
 }
+.payment{
+    text-align: center;
+    font-size: 1.5rem;
+    background: #6b8e23;
+    border-radius: 0.4rem;
+    margin-top:3rem ;
+
+}

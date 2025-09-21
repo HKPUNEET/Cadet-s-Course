@@ -38,6 +38,7 @@ export default function Footer() {
                         <li><a href="#section-1">Home</a></li>
                         <li><a href="#section-4">Our Program</a></li>
                         <li><a href="#section-3">About Us</a></li>
+                        <li className={styles.payment}><a href="https://www.instagram.com/rajputberet/"><button style={{width:"100%"}} >Register</button></a></li>
                         {/*<li><a href="#section-5">Contact</a></li>*/}
                     </ul>
                 </div>
