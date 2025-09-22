@@ -21,7 +21,7 @@ export default function Hero() {
                 </h1>
 
                 <p className={styles.heroSubtitle}>
-                    SSB TRANSFORM provides a comprehensive 21-day course tailored to
+                    SSB TRANSFORM provides a comprehensive 14-day course tailored to
                     prepare Defence Aspirants to become an Indian Army Officer with
                     one-to-one guidance and expert strategies to crack SSB and improve
                     personality.
