@@ -7,8 +7,8 @@ export default function Course() {
         <div className={styles.container} id="section-fees">
             <h2 className={styles.title}>Course Fees & Special Offer:</h2>
             <ul className={styles.list}>
-                <li className={styles.price}>₹398 <span className={styles.price}>(2days offer – 28th September and 29th September)</span></li>
-                <li className={styles.price}>₹498 <span className={styles.price}>(Other days)</span></li>
+                <li className={styles.price}>₹398 <span className={styles.price}>(2days offer)</span></li>
+                <li className={styles.price}>₹498  <span className={styles.price}>(Other days)</span></li>
             </ul>
 
             <div className={styles.policy}>
