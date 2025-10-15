@@ -5,10 +5,10 @@ import styles from "./course.module.css";
 export default function Course() {
     return (
         <div className={styles.container} id="section-fees">
-            <h2 className={styles.title}>Course Fees & Special Offer:</h2>
+            <h2 className={styles.title}>Course Fees</h2>
             <ul className={styles.list}>
-                <li className={styles.price}>₹398 <span className={styles.price}>(2days offer)</span></li>
-                <li className={styles.price}>₹498  <span className={styles.price}>(Other days)</span></li>
+                <li className={styles.price}>₹498. <span className={styles.price}></span></li>
+                {/*<li className={styles.price}>₹498  <span className={styles.price}></span></li>*/}
             </ul>
 
             <div className={styles.policy}>
